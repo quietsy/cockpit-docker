@@ -7,26 +7,11 @@ So you can manage your docker containers from Cockpit
 First off you need to install cockpit according to [Cockpit docs](https://cockpit-project.org/running.html)
 
 ### 2) Get the plugin
-Download the [Latest Release](https://github.com/mrevjd/cockpit-docker/releases/latest)
-
-### 3) Install
-Move or Copy the downloaded release to the cockpit directory. Eg: `/usr/share/cockpit`
-
-Change to the cockpit directory.
-
-Simply extract:
-```
-tar xf cockpit-docker.tar.gz -C .
-```
-
-## Manual install as user module
-
-### 1) Get the plugin
 You can clone this repository by running 
 
-`git clone https://github.com/mrevjd/cockpit-docker` 
+`git clone https://github.com/quietsy/cockpit-docker` 
 
-### 2) Install
+### 3) Install
 run the `./install` script
 
 ## OR
@@ -46,14 +31,6 @@ then link the `dist/docker` folder to `~/.local/share/cockpit/docker`
 
 ## Manual install as global module
 Same as user module but instead of linking to `$HOME/.local/share/cockpit/docker` link to `/usr/share/cockpit/docker` 
-
-## Ubuntu package - YMMV
-On Ubuntu 20.04 (and likely others), the cockpit-docker package can still be downloaded and used to retain prior functionality:
-```bash
-wget https://launchpad.net/ubuntu/+source/cockpit/215-1~ubuntu19.10.1/+build/18889196/+files/cockpit-docker_215-1~ubuntu19.10.1_all.deb
-sudo dpkg -i cockpit-docker_215-1~ubuntu19.10.1_all.deb
-```
-
 
 ## License 
 Cockpit is licensed under the GNU Lesser general public license. 
